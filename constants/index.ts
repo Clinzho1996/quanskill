@@ -1255,7 +1255,7 @@ export const courses = [
 		moduleOverview: {
 			title: "Module Overview",
 			description:
-				"This module is designed to provide a strong foundation in mathematics for data science. By mastering these essential mathematical concepts, you'll be equipped to analyze complex data, build robust machine learning models, and make informed data-driven decisions.",
+				"This module is designed to provide a comprehensive introduction to machine learning, covering essential concepts and practical applications. By the end of this module, you will be able to build and deploy robust machine learning models.",
 		},
 		knowledgeAndProgrammeOverview: {
 			title: "Knowledge and Programme Overview",

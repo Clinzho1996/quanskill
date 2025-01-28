@@ -10,19 +10,19 @@ const MegaMenu: React.FC = () => {
 						img="/uni.png"
 						route="/b2b/university"
 						title="University"
-						description="Lorem ipsum dolor sit amet consectetur. Feugiat congue blandit."
+						description="Learn from industry leaders and master essential skills"
 					/>
 					<MegaCard
 						img="/gov.png"
 						route="/b2b/government"
 						title="Government"
-						description="Lorem ipsum dolor sit amet consectetur. Feugiat congue blandit."
+						description="Learn from industry leaders and master essential skills"
 					/>
 					<MegaCard
 						img="/cor.png"
 						route="/b2b/corporate"
 						title="Corporate"
-						description="Lorem ipsum dolor sit amet consectetur. Feugiat congue blandit."
+						description="Learn from industry leaders and master essential skills"
 					/>
 				</div>
 				<div className="w-[35%] pl-10">

@@ -1261,12 +1261,10 @@ export const courses = [
 			title: "Knowledge and Programme Overview",
 			content: [
 				{
-					title: "Linear Algebra",
+					title: "Introduction to AI and ML",
 					topics: [
-						"Vectors",
-						"Matrices",
-						"Linear Transformations",
-						"Eigenvalues",
+						"Basics of AI and ML",
+						"Types of ML (Supervised, Unsupervised, Reinforcement Learning)",
 					],
 					applications: [
 						"Data representation",
@@ -1274,13 +1272,10 @@ export const courses = [
 					],
 				},
 				{
-					title: "Statistics and Probability",
+					title: "Data Processing for ML",
 					topics: [
-						"Mean",
-						"Variance",
-						"Probability Distributions (Normal, Poisson)",
-						"Hypothesis Testing",
-						"Confidence Intervals",
+						"Normalization, Standardization",
+						"Label Encoding, One-Hot Encoding",
 					],
 					applications: [
 						"A/B testing",
@@ -1289,20 +1284,68 @@ export const courses = [
 					],
 				},
 				{
-					title: "Calculus & Optimization",
-					topics: ["Derivatives", "Gradient Descent", "Chain Rule"],
+					title: "Fundamentals of ML",
+					topics: [
+						"Types of ML: Regression, Classification, Clustering",
+						"Steps: Data collection, preprocessing, modeling, evaluation, deployment",
+					],
 					applications: [
 						"Optimizing machine learning models",
 						"Trend prediction",
 					],
 				},
 				{
-					title: "Advanced Probability & Information Theory",
+					title: "Regression Analysis",
 					topics: [
-						"Bayes' Theorem",
-						"Hidden Markov Models",
-						"Shannon Entropy",
-						"Information Gain",
+						"Linear Regression: Concept, implementation, metrics (MSE, R-squared)",
+					],
+					applications: [
+						"Spam filtering",
+						"Sequence prediction",
+						"Feature selection",
+					],
+				},
+				{
+					title: "Classification Techniques",
+					topics: [
+						"Logistic Regression: Concept, implementation, metrics (Accuracy, Precision, Recall, F1, ROC)",
+					],
+					applications: [
+						"Spam filtering",
+						"Sequence prediction",
+						"Feature selection",
+					],
+				},
+				{
+					title: "Decision Trees",
+					topics: [
+						"Algorithms for regression/classification",
+						"Pruning to avoid overfitting",
+					],
+					applications: [
+						"Spam filtering",
+						"Sequence prediction",
+						"Feature selection",
+					],
+				},
+				{
+					title: "Advanced Algorithms",
+					topics: [
+						"K-Nearest Neighbors (KNN)",
+						"Support Vector Machines (SVMs)",
+						"Ensemble Methods: Random Forest, AdaBoost, Gradient/XG Boost",
+					],
+					applications: [
+						"Spam filtering",
+						"Sequence prediction",
+						"Feature selection",
+					],
+				},
+				{
+					title: "Artificial Neural Networks",
+					topics: [
+						"Basics: Layers, activation functions, weights",
+						"Hands-on with TensorFlow or PyTorch",
 					],
 					applications: [
 						"Spam filtering",
@@ -1313,26 +1356,27 @@ export const courses = [
 			],
 		},
 		toolkit: {
-			title: "Toolkit for Mathematics Mastery",
+			title: "Toolkit for ML1 Mastery",
 			programmingLanguage: "Python",
-			libraries: ["math", "numpy", "statistics"],
+			libraries:
+				"Scikit-learn,Pandas, XGBoost, LightGBM, CatBoost, Pickle,  Matplotlib, Seaborn",
 		},
 		skillsAndAbilities: {
 			title: "Skills and Abilities",
 			content: [
-				"Data manipulation and transformation",
-				"Statistical analysis and inference",
-				"Model optimization and tuning",
-				"Probabilistic reasoning and feature selection",
+				"Data Manipulation and Analysis",
+				"Model Building and Evaluation",
+				"Machine Learning Pipelines",
+				"Problem-Solving and Critical Thinking",
 			],
 		},
 		courseFormatAndAssessment: {
 			title: "Course Format and Assessment",
-			liveStreamingHours: 15,
+			liveStreamingHours: 12,
 			selfLearningHours: 15,
 			assessmentsAndProjects: {
 				practiceQuestions: 60,
-				mcqs: 200,
+				mcqs: 180,
 			},
 		},
 		availableResources: {
@@ -1351,15 +1395,17 @@ export const courses = [
 		expectedLearningOutcomes: {
 			title: "Learning Outcomes",
 			content: [
-				"Handle and transform data for machine learning models.",
-				"Analyze patterns, validate findings, and predict outcomes.",
-				"Optimize algorithms for performance improvements.",
-				"Leverage probabilistic reasoning and feature selection techniques.",
+				"Grasp foundational and advanced ML concepts",
+				"Preprocess, model, and evaluate datasets effectively",
 			],
 		},
 		prerequisitesAndFuturePathway: {
 			title: "Pre-requisites and Future Pathway",
-			prerequisites: ["A basic understanding of python", "Basic mathematics"],
+			prerequisites: [
+				"A basic understanding of python",
+				"Mathematics: Linear algebra, calculus, and probability",
+				"Data Handling: Familiarity with NumPy, pandas, and matplotlib",
+			],
 			futurePathway:
 				"This module serves as a solid foundation for advanced data science courses and real-world applications in machine learning and artificial intelligence.",
 		},

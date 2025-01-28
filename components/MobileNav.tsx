@@ -85,7 +85,7 @@ const MobileNav = () => {
 													href={item.route}
 													key={item.name}
 													className={cn("sidebar-link", {
-														"bg-secondary": isActive,
+														"bg-transparent": isActive,
 													})}>
 													<p
 														className={cn("text-gray-400 text-sm", {

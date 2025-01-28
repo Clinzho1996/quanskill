@@ -1,6 +1,7 @@
 import { CartProvider } from "@/context/CartContext";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
@@ -25,6 +26,13 @@ export default function RootLayout({
 			<body className={`${inter.variable}`}>
 				<ToastContainer />
 				<CartProvider>{children}</CartProvider>
+
+				<Script
+					src="https://embed.tawk.to/679892eb3a8427326075bac5/1iilvrqq9"
+					strategy="afterInteractive"
+					charSet="UTF-8"
+					crossOrigin="anonymous"
+				/>
 			</body>
 		</html>
 	);

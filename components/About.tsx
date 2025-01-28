@@ -49,7 +49,7 @@ function About() {
 					/>
 					<AboutCard
 						img="/tools.png"
-						title="Collaborate with quannet"
+						title="Collaborate with Quannet"
 						description="Access the latest AI frameworks and tech used by top companies."
 					/>
 				</div>

@@ -131,7 +131,7 @@ export const courses = [
 			"Develop, test, and optimize key sorting and searching algorithms, while leveraging multithreading and multiprocessing for performance.",
 		],
 		includes: [
-			{ text: "22 self-learning videos", Icon: IconVideo },
+			{ text: "22 live classes", Icon: IconVideo },
 			{ text: "63 programming practice exercises", Icon: IconCode },
 			{ text: "8 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -466,7 +466,7 @@ export const courses = [
 			"Master optimization techniques such as the gradient descent algorithm and understand concepts like entropy and information gain.",
 		],
 		includes: [
-			{ text: "29 self-learning videos", Icon: IconVideo },
+			{ text: "29 live classes", Icon: IconVideo },
 			{ text: "60 programming practice exercises", Icon: IconCode },
 			{ text: "18 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -783,7 +783,7 @@ export const courses = [
 			"Conduct exploratory data analysis (EDA) on real-world datasets, uncovering insights through data visualizations and analysis.",
 		],
 		includes: [
-			{ text: "12 self-learning videos", Icon: IconVideo },
+			{ text: "12 live classes", Icon: IconVideo },
 			{ text: "46 programming practice exercises", Icon: IconCode },
 			{ text: "14 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -1069,7 +1069,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -1387,7 +1387,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -1701,7 +1701,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -2018,7 +2018,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -2324,7 +2324,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },
@@ -2643,7 +2643,7 @@ export const courses = [
 			"Explore artificial neural networks and their role in more complex machine learning models.",
 		],
 		includes: [
-			{ text: "28 self-learning videos", Icon: IconVideo },
+			{ text: "28 live classes", Icon: IconVideo },
 			{ text: "64 programming practice exercises", Icon: IconCode },
 			{ text: "10 downloadable resources", Icon: IconDownload },
 			{ text: "Certificate of completion", Icon: IconCertificate },

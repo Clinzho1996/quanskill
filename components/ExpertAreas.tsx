@@ -12,7 +12,7 @@ function ExpertAreas() {
 						className="bg-white"
 					/>
 					<h2 className="text-[22px] lg:text-[28px] font-extrabold font-inter text-primary leading-[28px] sm:leading-[40px] w-full lg:w-[50%] text-center">
-						Our instructors specialize in today&apos;s most in-demand skills
+						Our experts specialize in today&apos;s most in-demand skills
 					</h2>
 				</div>
 

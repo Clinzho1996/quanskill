@@ -8,7 +8,7 @@ function Learning() {
 				<LearnCard
 					img="/live-icon.png"
 					title="Live Classes"
-					description="Engage with instructors in real-time for active learning."
+					description="Engage with experts in real-time for active learning."
 					bg="/live.png"
 					handleClick={() => {}}
 				/>

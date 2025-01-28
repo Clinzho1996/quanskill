@@ -45,11 +45,11 @@ function About() {
 					<AboutCard
 						img="/faculty.png"
 						title="QuanTors"
-						description="Instructors with decades of combined experience in data science and AI."
+						description="Experts with decades of combined experience in data science and AI."
 					/>
 					<AboutCard
 						img="/tools.png"
-						title="Collaborate with community"
+						title="Collaborate with quannet"
 						description="Access the latest AI frameworks and tech used by top companies."
 					/>
 				</div>

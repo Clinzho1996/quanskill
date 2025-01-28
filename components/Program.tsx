@@ -27,7 +27,9 @@ function Program() {
 							className="flex flex-row  justify-center ml-[48%] mt-[0px] lg:mt-[-15px] items-center object-contain"
 						/>
 					</div>
-					<button className="py-2 px-3 bg-[#FFFFFF] rounded-lg border-[1px] border-[#1E3A8A] flex flex-row font-semibold items-center text-[#1E3A8A] lg:text-[12px] text-[10px] gap-1 w-fit mt-5">
+					<button
+						className="py-2 px-3 bg-[#FFFFFF] rounded-lg border-[1px] border-[#1E3A8A] flex flex-row font-semibold items-center text-[#1E3A8A] lg:text-[12px] text-[10px] gap-1 w-fit mt-5"
+						onClick={() => (window.location.href = "/all-courses")}>
 						See All Courses
 						<IconCaretRightFilled
 							className="w-4 h-4 text-[#6B7280]"

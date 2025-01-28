@@ -4,7 +4,6 @@ import {
 	IconCaretRightFilled,
 	IconChevronDown,
 	IconMail,
-	IconPhoneCall,
 	IconSearch,
 	IconShoppingCart,
 	IconSquareRoundedX,
@@ -95,19 +94,19 @@ function Header() {
 							className="w-[16] h-[16] object-fit items-center my-auto"
 						/>
 						<Link
-							href="/"
+							href="/all-courses"
 							className="text-white text-[12px] font-normal lg:text-sm">
 							All Courses
 						</Link>
 					</div>
 					<div className="flex flex-row gap-6 justify-start">
-						{/* <Link
+						<Link
 							href="/about-us"
 							className="text-white text-[12px] font-normal lg:text-sm">
 							About Us
-						</Link> */}
+						</Link>
 						<Link
-							href="/community"
+							href="/"
 							className="text-white text-[12px] font-normal lg:text-sm">
 							Community
 						</Link>
@@ -117,7 +116,7 @@ function Header() {
 							Experts
 						</Link>
 						<Link
-							href="/resources"
+							href="/"
 							className="text-white text-[12px] font-normal lg:text-sm">
 							Resources
 						</Link>
@@ -145,15 +144,6 @@ function Header() {
 					</div>
 				</div>
 				<div className="flex flex-row justify-end gap-5">
-					<div className="flex flex-row justify-start gap-1">
-						{" "}
-						<IconPhoneCall className="mr-1 text-secondary w-5 h-5" />
-						<Link
-							href="/"
-							className="text-white text-[12px] font-normal lg:text-sm">
-							(+84) - 942322620
-						</Link>
-					</div>
 					<div className="flex flex-row justify-start gap-1">
 						<IconMail className="mr-1 text-secondary w-5 h-5" />
 						<Link

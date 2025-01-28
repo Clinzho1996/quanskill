@@ -15,7 +15,7 @@ export const NavLinks = [
 	},
 	{
 		name: "About Us",
-		route: "/about",
+		route: "/",
 	},
 	{
 		name: "Community",

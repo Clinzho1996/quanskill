@@ -19,23 +19,23 @@ export const NavLinks = [
 	},
 	{
 		name: "Community",
-		route: "/community",
+		route: "/",
 	},
 	{
 		name: "Experts",
-		route: "/expert",
+		route: "/experts",
 	},
 	{
 		name: "Resources",
-		route: "/resources",
+		route: "/",
 	},
 	{
 		name: "B2B",
-		route: "/b2b",
+		route: "/",
 	},
 	{
 		name: "Contact Us",
-		route: "/contact-us",
+		route: "/waitlist",
 	},
 ];
 

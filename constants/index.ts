@@ -115,7 +115,7 @@ export const courses = [
 		description:
 			"Learn the basics of Python programming and establish a strong foundation.",
 		users: "College Students & Working Professionals",
-		category: "Programming",
+		category: "Python",
 		level: "Beginner",
 		price: "$120.00",
 		noTopics: "21",
@@ -767,7 +767,7 @@ export const courses = [
 		description:
 			"Master Python tools and libraries for effective data science workflows.",
 		users: "College Students & Working Professionals",
-		category: "Data Science",
+		category: "Python",
 		level: "Intermediate",
 		noTopics: "18",
 		price: "$150.00",
@@ -1053,7 +1053,7 @@ export const courses = [
 		description:
 			"Dive into the world of machine learning and build predictive models.",
 		users: "Working Professionals",
-		category: "Artificial Intelligence",
+		category: "Machine Learning",
 		level: "Advanced",
 		price: "$250.00",
 		noTopics: "20",
@@ -1417,7 +1417,7 @@ export const courses = [
 		description:
 			"This module delves deeper into advanced machine learning techniques, focusing on unsupervised learning, model performance optimization",
 		users: "Working Professionals",
-		category: "Artificial Intelligence",
+		category: "Machine Learning",
 		level: "Enthusiasts",
 		price: "$250.00",
 		noTopics: "20",
@@ -1731,7 +1731,7 @@ export const courses = [
 		description:
 			"This module delves into the exciting world of deep learning, building upon foundational machine learning concepts.",
 		users: "Working Professionals",
-		category: "Artificial Intelligence",
+		category: "Deep Learning",
 		level: "Expert",
 		price: "$300.00",
 		noTopics: "20",
@@ -2048,7 +2048,7 @@ export const courses = [
 		description:
 			"The heart of modern AI, powering applications like chatbots, search engines, and, most notably,",
 		users: "Working Professionals",
-		category: "Artificial Intelligence",
+		category: "Natural Language Processing",
 		level: "Expert",
 		price: "$300.00",
 		noTopics: "20",
@@ -2673,7 +2673,7 @@ export const courses = [
 		description:
 			"This module introduces the principles and tools of MLOps, focusing on practical implementations using open-source technologies.",
 		users: "Working Professionals",
-		category: "Artificial Intelligence",
+		category: "GenAI",
 		level: "Expert",
 		price: "$300.00",
 		noTopics: "20",

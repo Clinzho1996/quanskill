@@ -2,12 +2,12 @@ import { courses } from "@/constants";
 import { useRouter } from "next/navigation";
 import CourseCard from "./CourseCard";
 
-function Python() {
+function DataScience() {
 	const router = useRouter();
 
 	// Filter courses where the category is "python"
 	const pythonCourses = courses.filter(
-		(course) => course.category.toLowerCase() === "python"
+		(course) => course.category.toLowerCase() === "data science"
 	);
 
 	return (
@@ -38,4 +38,4 @@ function Python() {
 	);
 }
 
-export default Python;
+export default DataScience;

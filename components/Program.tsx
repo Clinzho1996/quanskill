@@ -2,6 +2,12 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { IconCaretRightFilled } from "@tabler/icons-react";
 import Image from "next/image";
+import AllCoursesComp from "./AllCoursesComp";
+import DataScience from "./DataScience";
+import DeepLearning from "./DeepLearning";
+import GenAi from "./GenAi";
+import Machine from "./Machine";
+import NaturalLang from "./NaturalLang";
 import Python from "./Python";
 import SecondaryButton from "./SecondaryButton";
 
@@ -38,8 +44,9 @@ function Program() {
 					</button>
 				</div>
 				<div className="mt-10 flex flex-row w-full border-[1px] border-[#D1D5DB] py-4 rounded-lg">
-					<Tabs defaultValue="python">
+					<Tabs defaultValue="all">
 						<TabsList className="flex flex-row h-fit flex-wrap justify-start bg-[#EFF1F5] w-fit  ml-4 mr-4 gap-3">
+							<TabsTrigger value="all">All Courses</TabsTrigger> |
 							<TabsTrigger value="python">Python </TabsTrigger> |
 							<TabsTrigger value="data-science">Data Science </TabsTrigger> |
 							<TabsTrigger value="machine-learning">
@@ -53,18 +60,27 @@ function Program() {
 							|<TabsTrigger value="llms-and-genai">LLMs and GenAI</TabsTrigger>
 						</TabsList>
 						<div className="w-full px-4 mt-[100px] lg:mt-0">
+							<TabsContent value="all">
+								<AllCoursesComp />
+							</TabsContent>
 							<TabsContent value="python">
 								<Python />
 							</TabsContent>
 							<TabsContent value="data-science">
-								<Python />
+								<DataScience />
 							</TabsContent>
-							<TabsContent value="machine-learning">Coming soon</TabsContent>
-							<TabsContent value="deep-learning">Coming soon</TabsContent>
+							<TabsContent value="machine-learning">
+								<Machine />
+							</TabsContent>
+							<TabsContent value="deep-learning">
+								<DeepLearning />
+							</TabsContent>
 							<TabsContent value="natural-language-processing">
-								Coming soon
+								<NaturalLang />
 							</TabsContent>
-							<TabsContent value="llms-and-genai">Coming soon</TabsContent>
+							<TabsContent value="llms-and-genai">
+								<GenAi />
+							</TabsContent>
 						</div>
 					</Tabs>
 				</div>

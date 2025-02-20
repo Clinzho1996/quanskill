@@ -10,6 +10,7 @@ import {
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useState } from "react";
 import MegaMenu from "./MegaMenu";
 import MobileNav from "./MobileNav";
@@ -26,6 +27,37 @@ function Header() {
 
 	return (
 		<section className="relative">
+			<head>
+				{/* Meta Pixel Script */}
+				<Script
+					id="facebook-pixel"
+					strategy="afterInteractive"
+					dangerouslySetInnerHTML={{
+						__html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '3445030582295311');
+              fbq('track', 'PageView');
+            `,
+					}}
+				/>
+				{/* NoScript Fallback */}
+				<noscript>
+					<img
+						height="1"
+						width="1"
+						style={{ display: "none" }}
+						src="https://www.facebook.com/tr?id=3445030582295311&ev=PageView&noscript=1"
+						alt="Facebook Pixel"
+					/>
+				</noscript>
+			</head>
 			<div className="bg-white w-full  px-[6%] text-white py-0 flex flex-row justify-between items-center mb-0">
 				<div className="lg:w-[15%] w-[50%] border-r-[1.2px] py-6 items-center border-[#E2E4E9] mr-[30px] pr-7  flex">
 					<Link href="/">

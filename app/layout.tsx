@@ -23,9 +23,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="custom-scrollbar">
+			{" "}
 			<head>
 				{/* Meta Pixel Script */}
 				<Script
+					id="facebook-pixel"
 					strategy="afterInteractive"
 					dangerouslySetInnerHTML={{
 						__html: `
@@ -49,6 +51,7 @@ export default function RootLayout({
 						width="1"
 						style={{ display: "none" }}
 						src="https://www.facebook.com/tr?id=3445030582295311&ev=PageView&noscript=1"
+						alt="Facebook Pixel"
 					/>
 				</noscript>
 			</head>

@@ -24,7 +24,7 @@ function Hero() {
 			}, 1000); // Duration of fade-out animation
 		}, 4000); // Total cycle duration
 		return () => clearInterval(interval);
-	}, []);
+	}, [currentIndex]);
 
 	return (
 		<section className="hero flex flex-col lg:flex-row items-center justify-between w-full px-[6%] py-[16%] lg:py-[4%] mt-0 ease-fade">

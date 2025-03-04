@@ -44,6 +44,9 @@ body {
 	width: max-content;
 }
 
+.modal {
+	width: 400px !important;
+}
 /* Animation that starts from the right */
 @keyframes scrolls {
 	0% {

@@ -29,10 +29,7 @@ function Home() {
 		country: "",
 	});
 
-	const date = new Date();
-
 	const formSubmit = async () => {
-		// Check if both email and password are provided
 		if (
 			form.full_name.trim() === "" ||
 			form.email.trim() === "" ||

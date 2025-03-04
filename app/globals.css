@@ -47,13 +47,13 @@ body {
 /* Animation that starts from the right */
 @keyframes scrolls {
 	0% {
-		transform: translateX(-50%); /* Start from the right */
+		transform: translateX(-50%);
 	}
 	50% {
-		transform: translateX(0%); /* Move to the center */
+		transform: translateX(0%);
 	}
 	100% {
-		transform: translateX(-50%); /* Return to the starting position */
+		transform: translateX(-50%);
 	}
 }
 

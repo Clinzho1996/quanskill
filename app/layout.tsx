@@ -23,7 +23,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="custom-scrollbar">
-			{" "}
 			<head>
 				{/* Meta Pixel Script */}
 				<Script

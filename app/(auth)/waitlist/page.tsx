@@ -96,9 +96,9 @@ function Waitlist() {
 						<p className="text-primary text-xs lg:text-sm font-semibold font-inter">
 							Join Our April Cohort
 						</p>
-						<p className="text-xs text-[#6B7280] font-inter font-light">
+						{/* <p className="text-xs text-[#6B7280] font-inter font-light">
 							Please drop your details here so we can keep in touch
-						</p>
+						</p> */}
 					</div>
 
 					{/* form section */}

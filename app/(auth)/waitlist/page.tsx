@@ -93,8 +93,8 @@ function Waitlist() {
 								className="object-contain"
 							/>
 						</Link>
-						<p className="text-primary text-xs lg:text-sm font-normal font-inter">
-							Join our waitlist for early access
+						<p className="text-primary text-xs lg:text-sm font-semibold font-inter">
+							Join Our April Cohort
 						</p>
 						<p className="text-xs text-[#6B7280] font-inter font-light">
 							Please drop your details here so we can keep in touch
@@ -153,7 +153,7 @@ function Waitlist() {
 							<button
 								className="bg-secondary flex flex-row justify-center items-center gap-1 text-primary p-3 rounded-lg mt-4 w-full"
 								onClick={formSubmit}>
-								<p className="text-xs lg:text-sm">Keep me updated</p>
+								<p className="text-xs lg:text-sm">Enroll Now</p>
 								<IconCaretRightFilled size={18} />
 							</button>
 						)}

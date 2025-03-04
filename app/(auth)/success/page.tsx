@@ -16,7 +16,7 @@ function FormSuccess() {
 			<p className="text-primary text-xs lg:text-sm font-normal font-inter">
 				Thank you for signing up for our April cohort!
 			</p>
-			<p className="text-xs text-[#6B7280] font-inter font-light">
+			<p className="text-xs text-[#6B7280] font-inter font-light w-full lg:w-[30%] text-center">
 				We&apos;re excited to have you on board and will keep you updated with
 				important details and exclusive opportunities.
 			</p>

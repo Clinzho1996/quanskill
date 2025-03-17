@@ -93,7 +93,7 @@ function Home() {
 	return (
 		<div>
 			<GlobalModal isOpen={isModalOpen} onClose={closeModal}>
-				<div className="gap-4 modal w-full lg:w-[100%] mx-auto border-[1px] border-[#0000001A] rounded-lg p-10 shadow-lg">
+				<div className="gap-4 modal w-full lg:w-[100%] mx-auto border-[1px] border-[#0000001A] rounded-lg p-2 lg:p-10 shadow-lg">
 					<div className="flex flex-col justify-center items-center gap-3">
 						<Link href="/">
 							<Image

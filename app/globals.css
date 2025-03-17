@@ -48,6 +48,12 @@ body {
 	width: 400px !important;
 }
 
+@media screen and (max-width: 600px) {
+	.modal {
+		width: 290px !important;
+	}
+}
+
 /* Add this to your global CSS or a CSS module */
 #google_translate_element {
 	background-color: #fff !important;

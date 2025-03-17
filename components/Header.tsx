@@ -47,6 +47,27 @@ function Header() {
             `,
 					}}
 				/>
+				{/* Google Translate Script */}
+				<Script
+					id="google-translate"
+					strategy="afterInteractive"
+					src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+					onLoad={() => {
+						console.log("Google Translate script loaded");
+						window.googleTranslateElementInit = () => {
+							new window.google.translate.TranslateElement(
+								{
+									pageLanguage: "en",
+									includedLanguages: "en,vi",
+									layout: (window.google.translate.TranslateElement as any)
+										.InlineLayout.SIMPLE, // Type assertion here
+								},
+								"google_translate_element"
+							);
+						};
+						window.googleTranslateElementInit();
+					}}
+				/>
 				{/* NoScript Fallback */}
 				<noscript>
 					<img
@@ -58,6 +79,10 @@ function Header() {
 					/>
 				</noscript>
 			</head>
+			{/* Trick to force Google Translate dropdown to appear */}
+			<div className="notranslate" style={{ display: "none" }}>
+				This text will not be translated.
+			</div>
 			<div className="bg-white w-full  px-[6%] text-white py-0 flex flex-row justify-between items-center mb-0">
 				<div className="lg:w-[15%] w-[50%] border-r-[1.2px] py-6 items-center border-[#E2E4E9] mr-[30px] pr-7  flex">
 					<Link href="/">
@@ -70,7 +95,7 @@ function Header() {
 						/>
 					</Link>
 				</div>
-				<div className="hidden flex-row lg:w-[43%] justify-between gap-3 items-center border-[1px] border-lightblue rounded-xl lg:flex">
+				<div className="hidden flex-row lg:w-[33%] justify-between gap-3 items-center border-[1px] border-lightblue rounded-xl lg:flex">
 					<Input
 						type="text"
 						placeholder="What do you want to learn?"
@@ -80,7 +105,7 @@ function Header() {
 						<IconSearch className="text-white" />
 					</button>
 				</div>
-				<div className="lg:w-[42%] flex-row justify-end gap-3 items-center hidden lg:flex">
+				<div className="lg:w-[52%] flex-row justify-end gap-3 items-center hidden lg:flex">
 					<button
 						className="p-[3px] rounded-lg shadow-sm shadow-[#21212633] flex flex-row items-center text-primary lg:text-[12px] text-[10px] gap-1"
 						onClick={openModal}>
@@ -110,6 +135,16 @@ function Header() {
 							/>
 						</button>
 					</Link>
+					{/* Google Translate Element */}
+					<div
+						id="google_translate_element"
+						style={{
+							display: "flex",
+							alignItems: "center",
+							flexDirection: "row",
+							zIndex: 1000,
+							position: "relative",
+						}}></div>
 				</div>
 				<div className="flex lg:hidden">
 					<MobileNav />

@@ -17,18 +17,10 @@ import MobileNav from "./MobileNav";
 import Modal from "./Modal";
 import { Input } from "./ui/input";
 
-// Create or update a global.d.ts file in your project's src directory:
-
 interface GoogleTranslateElement extends google.translate.TranslateElement {
 	InlineLayout: {
-		SIMPLE: number; // Or whatever type it actually is
-		// Add other layout types if needed
+		SIMPLE: number;
 	};
-}
-
-interface Window {
-	googleTranslateElementInit?: () => void;
-	google: any; // Add this to prevent typescript errors related to the google object.
 }
 
 function Header() {

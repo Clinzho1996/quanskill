@@ -17,6 +17,20 @@ import MobileNav from "./MobileNav";
 import Modal from "./Modal";
 import { Input } from "./ui/input";
 
+// Create or update a global.d.ts file in your project's src directory:
+
+interface GoogleTranslateElement extends google.translate.TranslateElement {
+	InlineLayout: {
+		SIMPLE: number; // Or whatever type it actually is
+		// Add other layout types if needed
+	};
+}
+
+interface Window {
+	googleTranslateElementInit?: () => void;
+	google: any; // Add this to prevent typescript errors related to the google object.
+}
+
 function Header() {
 	const [isMegaMenuOpen, setMegaMenuOpen] = useState<boolean>(false);
 	const { cart, removeFromCart } = useCart();
@@ -59,8 +73,10 @@ function Header() {
 								{
 									pageLanguage: "en",
 									includedLanguages: "en,vi",
-									layout: (window.google.translate.TranslateElement as any)
-										.InlineLayout.SIMPLE, // Type assertion here
+									layout: (
+										window.google.translate
+											.TranslateElement as unknown as GoogleTranslateElement
+									).InlineLayout.SIMPLE,
 								},
 								"google_translate_element"
 							);

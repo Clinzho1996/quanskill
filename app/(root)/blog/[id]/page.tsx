@@ -81,7 +81,7 @@ export default function BlogContent() {
 					<div className="w-full lg:w-[70%] p-[6%] flex flex-col gap-4 justify-start">
 						<div className="flex flex-row justify-start items-center gap-3">
 							<div>
-								<Image src="/favicon.png" alt="avatar" width={50} height={50} />
+								<Image src="/icon.png" alt="avatar" width={50} height={50} />
 							</div>
 							<div>
 								<p>Quanskill Management</p>

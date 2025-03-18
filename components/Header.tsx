@@ -212,6 +212,11 @@ function Header() {
 							)}
 						</div>
 						<Link
+							href="/blog"
+							className="text-white text-[12px] font-normal lg:text-sm">
+							Blog
+						</Link>
+						<Link
 							href="/contact-us"
 							className="text-white text-[12px] font-normal lg:text-sm">
 							Contact Us

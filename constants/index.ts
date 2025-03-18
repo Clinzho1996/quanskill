@@ -34,6 +34,14 @@ export const NavLinks = [
 		route: "/",
 	},
 	{
+		name: "Blog",
+		route: "/blog",
+	},
+	{
+		name: "Waitlist",
+		route: "/waitlist",
+	},
+	{
 		name: "Contact Us",
 		route: "/waitlist",
 	},

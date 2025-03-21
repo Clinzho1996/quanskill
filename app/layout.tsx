@@ -53,6 +53,20 @@ export default function RootLayout({
 						alt="Facebook Pixel"
 					/>
 				</noscript>
+				<Script
+					strategy="lazyOnload"
+					src="https://www.googletagmanager.com/gtag/js?id=G-H959X3GX8S"
+					async
+				/>
+				<Script strategy="lazyOnload" id="ga-script">
+					{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-H959X3GX8S');
+        `}
+				</Script>
 			</head>
 			<body className={`${inter.variable}`}>
 				<ToastContainer />

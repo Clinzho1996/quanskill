@@ -43,7 +43,7 @@ function Translate() {
 					zIndex: 1000,
 					position: "absolute",
 					right: 470,
-					top: 25,
+					top: 27,
 				}}></div>
 		</section>
 	);

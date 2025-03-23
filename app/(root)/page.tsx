@@ -10,7 +10,6 @@ import PreFooter from "@/components/PreFooter";
 import Program from "@/components/Program";
 import Target from "@/components/Target";
 import Testimonials from "@/components/Testimonials";
-import Translate from "@/components/Translate";
 import { IconCaretRightFilled } from "@tabler/icons-react";
 import axios from "axios";
 import Image from "next/image";

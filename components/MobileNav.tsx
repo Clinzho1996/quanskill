@@ -23,12 +23,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Modal from "./Modal";
 
-interface GoogleTranslateElement extends google.translate.TranslateElement {
-	InlineLayout: {
-		SIMPLE: number;
-	};
-}
-
 const MobileNav = () => {
 	const pathname = usePathname();
 

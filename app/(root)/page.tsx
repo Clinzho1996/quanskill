@@ -10,6 +10,7 @@ import PreFooter from "@/components/PreFooter";
 import Program from "@/components/Program";
 import Target from "@/components/Target";
 import Testimonials from "@/components/Testimonials";
+import Translate from "@/components/Translate";
 import { IconCaretRightFilled } from "@tabler/icons-react";
 import axios from "axios";
 import Image from "next/image";
@@ -134,7 +135,7 @@ function Home() {
 							className="w-full bg-[#9F9E9E29] rounded-lg p-2 border border-[#0000001A] focus:outline-none focus:border-primary mt-2 placeholder:text-sm placeholder:text-[#6B7280] placeholder:font-inter shadow-inner"
 						/>
 						<p className="text-xs text-[#6B7280] font-inter font-light mt-3">
-							Phone Number 
+							Phone Number
 						</p>
 						<input
 							placeholder="+84 80 0000 00000"
@@ -171,6 +172,7 @@ function Home() {
 					</div>
 				</div>
 			</GlobalModal>
+
 			<Hero />
 			<About />
 			<Program />

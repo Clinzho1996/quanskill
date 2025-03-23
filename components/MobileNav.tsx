@@ -20,7 +20,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Script from "next/script";
 import { useState } from "react";
 import Modal from "./Modal";
 
@@ -41,28 +40,6 @@ const MobileNav = () => {
 
 	return (
 		<section className="w-full max-w-[264px] flex flex-row justify-between gap-6">
-			<Script
-				id="google-translate"
-				strategy="afterInteractive"
-				src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-				onLoad={() => {
-					console.log("Google Translate script loaded");
-					window.googleTranslateElementInit = () => {
-						new window.google.translate.TranslateElement(
-							{
-								pageLanguage: "en",
-								includedLanguages: "en,vi",
-								layout: (
-									window.google.translate
-										.TranslateElement as unknown as GoogleTranslateElement
-								).InlineLayout.SIMPLE,
-							},
-							"google_translate_element"
-						);
-					};
-					window.googleTranslateElementInit();
-				}}
-			/>
 			<button
 				className="p-[3px] rounded-lg shadow-sm shadow-[#21212633] flex flex-row items-center text-primary lg:text-[12px] text-[10px] gap-1"
 				onClick={openModal}>
@@ -149,17 +126,6 @@ const MobileNav = () => {
 										/>
 									</button>
 								</div>
-
-								{/* Google Translate Element */}
-								{/* <div
-									id="google_translate_elements"
-									style={{
-										display: "flex",
-										alignItems: "center",
-										flexDirection: "row",
-										zIndex: 1000,
-										position: "relative",
-									}}></div> */}
 							</div>
 						</SheetClose>
 					</div>

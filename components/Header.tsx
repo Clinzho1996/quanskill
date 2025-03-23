@@ -17,12 +17,6 @@ import MobileNav from "./MobileNav";
 import Modal from "./Modal";
 import { Input } from "./ui/input";
 
-interface GoogleTranslateElement extends google.translate.TranslateElement {
-	InlineLayout: {
-		SIMPLE: number;
-	};
-}
-
 function Header() {
 	const [isMegaMenuOpen, setMegaMenuOpen] = useState<boolean>(false);
 	const { cart, removeFromCart } = useCart();
@@ -51,29 +45,6 @@ function Header() {
               fbq('init', '3445030582295311');
               fbq('track', 'PageView');
             `,
-					}}
-				/>
-				{/* Google Translate Script */}
-				<Script
-					id="google-translate"
-					strategy="afterInteractive"
-					src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-					onLoad={() => {
-						console.log("Google Translate script loaded");
-						window.googleTranslateElementInit = () => {
-							new window.google.translate.TranslateElement(
-								{
-									pageLanguage: "en",
-									includedLanguages: "en,vi",
-									layout: (
-										window.google.translate
-											.TranslateElement as unknown as GoogleTranslateElement
-									).InlineLayout.SIMPLE,
-								},
-								"google_translate_element"
-							);
-						};
-						window.googleTranslateElementInit();
 					}}
 				/>
 				{/* NoScript Fallback */}
@@ -157,16 +128,6 @@ function Header() {
 							/>
 						</button>
 					</Link>
-					{/* Google Translate Element */}
-					<div
-						id="google_translate_element"
-						style={{
-							display: "flex",
-							alignItems: "center",
-							flexDirection: "row",
-							zIndex: 1000,
-							position: "relative",
-						}}></div>
 				</div>
 				<div className="flex lg:hidden">
 					<MobileNav />

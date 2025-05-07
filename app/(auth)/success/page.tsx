@@ -14,7 +14,7 @@ function FormSuccess() {
 				className="object-contain"
 			/>
 			<p className="text-primary text-xs lg:text-sm font-normal font-inter">
-				Thank you for signing up for our April cohort!
+				Thank you for signing up for our May cohort!
 			</p>
 			<p className="text-xs text-[#6B7280] font-inter font-light  text-center">
 				One of our support staff will reach out to you shortly

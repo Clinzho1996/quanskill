@@ -94,7 +94,7 @@ function Waitlist() {
 							/>
 						</Link>
 						<p className="text-primary text-xs lg:text-sm font-semibold font-inter">
-							Join Our April Cohort
+							Join Our May Cohort
 						</p>
 						<p className="text-xs text-[#6B7280] font-inter font-light">
 							Please drop your details here so we can keep in touch

@@ -29,7 +29,7 @@ export default function BlogContent() {
 	const fetchPost = async () => {
 		try {
 			const response = await axios.get<ApiResponse>(
-				`https://quanskill.kuditrak.ng/api/v1/post/${id}`,
+				`https://api.quanskill.com/api/v1/post/${id}`,
 				{
 					headers: {
 						Accept: "application/json",

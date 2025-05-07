@@ -28,7 +28,7 @@ function Blog() {
 		try {
 			// Fetch posts with appropriate typing
 			const response = await axios.get<ApiResponse>(
-				"https://quanskill.kuditrak.ng/api/v1/post",
+				"https://api.quanskill.com/api/v1/post",
 				{
 					headers: {
 						Accept: "application/json",

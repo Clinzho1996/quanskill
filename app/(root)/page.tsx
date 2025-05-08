@@ -44,7 +44,7 @@ function Home() {
 
 		try {
 			const { data } = await axios.post(
-				"https://quanskill.kuditrak.ng/api/v1/waitlist",
+				"https://api.quanskill.com/api/v1/waitlist",
 				{
 					full_name: form.full_name,
 					email: form.email,

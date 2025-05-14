@@ -86,7 +86,9 @@ function ExpertWork() {
 
 			{data?.works?.length ? (
 				data.works.map((work) => (
-					<div className="mt-6 border-t pt-4 space-y-3 p-4 rounded-lg shadow-lg border-[3px] border-white bg-[#F1F1F1]">
+					<div
+						className="mt-6 border-t pt-4 space-y-3 p-4 rounded-lg shadow-lg border-[3px] border-white bg-[#F1F1F1]"
+						key={work.id}>
 						<p className="flex flex-col font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Title:

@@ -85,8 +85,8 @@ function ExpertBiography() {
 						/>
 					)}
 				</div>
-				<div className="flex flex-col sm:flex-row justify-start  items-center gap-10">
-					<div className="flex flex-col gap-5">
+				<div className="flex flex-col sm:flex-row justify-start  items-center  gap-10">
+					<div className="flex flex-col gap-5 w-full">
 						<p className="flex flex-col font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Name:
@@ -106,7 +106,7 @@ function ExpertBiography() {
 							{data?.phone}
 						</p>
 					</div>
-					<div className="flex flex-col gap-5">
+					<div className="flex flex-col gap-5 w-full">
 						<p className="flex flex-col gap-1 font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Gender:

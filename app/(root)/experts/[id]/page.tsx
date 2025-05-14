@@ -83,7 +83,7 @@ function ExpertDetails() {
 				<div className="bg-[#fff] px-[6%] py-[12%] shadow-md shadow-gray-200 lg:px-20 lg:py-16 rounded-xl mt-[-30px] lg:mt-[-60px]">
 					<div className="flex flex-row justify-center w-full">
 						<Tabs defaultValue="bio" className="w-full">
-							<TabsList className="flex flex-row justify-center bg-[#EFF1F5] mx-auto w-fit gap-3">
+							<TabsList className="flex flex-row justify-center bg-[#EFF1F5] mx-auto w-fit gap-3 flex-wrap h-fit">
 								<TabsTrigger value="bio">Biography</TabsTrigger> |
 								<TabsTrigger value="work">Work and Project</TabsTrigger> |
 								<TabsTrigger value="courses">Assigned Courses</TabsTrigger>

@@ -69,6 +69,9 @@ function OurExperts() {
 						img={expert.pic || "/default-profile.png"}
 						name={`${expert.first_name} ${expert.last_name}`}
 						title={expert.institution_of_work || "Expert"}
+						handleClick={() => {
+							window.location.href = `/experts/${expert.id}`;
+						}}
 					/>
 				))}
 			</div>

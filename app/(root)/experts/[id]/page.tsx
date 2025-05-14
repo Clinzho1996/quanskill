@@ -2,6 +2,7 @@
 
 import Breadcrumb from "@/components/BreadCrumb";
 import ExpertBiography from "@/components/ExpertBiography";
+import ExpertCourses from "@/components/ExpertCourses";
 import ExpertWork from "@/components/ExpertWork";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import axios from "axios";
@@ -94,7 +95,9 @@ function ExpertDetails() {
 							<TabsContent value="work">
 								<ExpertWork />
 							</TabsContent>
-							<TabsContent value="courses">{/* <System /> */}</TabsContent>
+							<TabsContent value="courses">
+								<ExpertCourses />
+							</TabsContent>
 						</Tabs>
 					</div>
 				</div>

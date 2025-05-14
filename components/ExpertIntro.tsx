@@ -1,3 +1,4 @@
+import OurExperts from "./OurExperts";
 import SecondaryButton from "./SecondaryButton";
 
 function ExpertIntro() {
@@ -25,6 +26,8 @@ function ExpertIntro() {
 						</p>
 					</div>
 				</div>
+
+				<OurExperts />
 			</div>
 		</section>
 	);

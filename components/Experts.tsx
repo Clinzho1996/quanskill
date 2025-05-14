@@ -48,7 +48,7 @@ function Experts() {
 						</div>
 						<button
 							className="py-2 px-3 bg-[#FFFFFF] rounded-lg border-[1px] border-[#1E3A8A] flex flex-row font-semibold items-center text-[#1E3A8A] lg:text-[12px] text-[10px] gap-1 w-fit mt-5"
-							onClick={() => (window.location.href = "/waitlist")}>
+							onClick={() => (window.location.href = "/experts")}>
 							Explore Our Experts
 							<IconCaretRightFilled
 								className="w-4 h-4 text-[#6B7280]"

@@ -3,15 +3,13 @@
 import Breadcrumb from "@/components/BreadCrumb";
 import ExpertBiography from "@/components/ExpertBiography";
 import ExpertWork from "@/components/ExpertWork";
-import SecondaryButton from "@/components/SecondaryButton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import axios from "axios";
-import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 interface ApiResponse {
-	data: Staff[];
+	data: Staff;
 }
 
 export interface Staff {
@@ -52,7 +50,7 @@ function ExpertDetails() {
 			);
 
 			console.log("data", response?.data?.data);
-			setData(response.data.data[0] || null); // Set post data to the first staff or null
+			setData(response.data.data || null); // Set post data to the first staff or null
 			setIsLoading(false); // Set loading to false
 		} catch (error: unknown) {
 			if (axios.isAxiosError(error)) {
@@ -70,39 +68,20 @@ function ExpertDetails() {
 		fetchExpert();
 	}, [id]);
 
+	if (isLoading) {
+		return <div className="flex justify-center py-8">Loading...</div>;
+	}
+
 	return (
 		<section>
 			<Breadcrumb
-				title="Experts"
+				title={data?.first_name + " " + data?.last_name}
 				description="Learn from industry leaders, master essential skills, and build your career with confidence."
 			/>
 
 			<section className="bg-white p-4">
 				<div className="bg-[#fff] px-[6%] py-[12%] shadow-md shadow-gray-200 lg:px-20 lg:py-16 rounded-xl mt-[-30px] lg:mt-[-60px]">
-					<div className="flex flex-col lg:flex-row justify-between items-end align-bottom w-full">
-						<div className="w-full lg:w-[50%]">
-							<Link href="/experts">
-								<SecondaryButton
-									img="/chevron-right.png"
-									className="bg-white"
-									title="Back to previous page"
-								/>
-							</Link>
-							<h2 className="text-primary text-[28px] pr-0 lg:pr-[18%] font-inter font-bold mt-4">
-								Learn from Industry Veterans Who Shape AI&apos;s Future
-							</h2>
-						</div>
-						<div className="w-full lg:w-[50%]">
-							<p className="text-[#6B7280] text-[14px]">
-								At Quanskill, you&apos;ll learn directly from professionals who
-								don&apos;t just teach AI and Data Science—they live it. Our
-								instructors bring together decades of experience from leading
-								tech companies, research institutions, and successful AI
-								implementations.
-							</p>
-						</div>
-					</div>
-					<div className="mt-10 flex flex-row justify-center w-full">
+					<div className="flex flex-row justify-center w-full">
 						<Tabs defaultValue="bio" className="w-full">
 							<TabsList className="flex flex-row justify-center bg-[#EFF1F5] mx-auto w-fit gap-3">
 								<TabsTrigger value="bio">Biography</TabsTrigger> |

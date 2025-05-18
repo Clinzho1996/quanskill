@@ -148,9 +148,9 @@ function ContactUs() {
 							<p className="text-[#0D1420B2] text-sm mt-4">
 								Drop us a mail at{" "}
 								<Link
-									href="mailto:hello@quanskill.com"
+									href="mailto:info@quanskill.com"
 									className="underline font-normal text-primary">
-									hello@quanskill.com
+									info@quanskill.com
 								</Link>
 							</p>
 

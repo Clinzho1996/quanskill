@@ -95,8 +95,8 @@ function ContactUs() {
 				description="Learn from industry leaders, master essential skills, and build your career with confidence."
 			/>
 
-			<section className="bg-primary p-4">
-				<div className="bg-[#F9FAF9] px-[6%] py-[15%] lg:px-20 lg:py-16 rounded-lg">
+			<section className="p-4">
+				<div className="bg-[#F9FAF9] px-[6%] py-[15%] lg:px-20 lg:py-16 rounded-lg shadow-lg mt-[-27px] sm:mt-[-50px]">
 					{/* contact form */}
 
 					<div className="flex flex-col lg:flex-row justify-between items-center w-full">
@@ -119,9 +119,7 @@ function ContactUs() {
 								<Link href="#">
 									<Image src="/s3.png" alt="fb" width={30} height={30} />
 								</Link>
-								<Link
-									href="#"
-									className="cursor-pointer">
+								<Link href="#" className="cursor-pointer">
 									<Image src="/s4.png" alt="fb" width={30} height={30} />
 								</Link>
 								<Link href="#">

@@ -1,8 +1,8 @@
 "use client";
 
+import AllCoursesComp from "@/components/AllCoursesComp";
 import Breadcrumb from "@/components/BreadCrumb";
 import PreFooter from "@/components/PreFooter";
-import Python from "@/components/Python";
 
 function AllCourses() {
 	return (
@@ -12,7 +12,7 @@ function AllCourses() {
 				description="Learn from industry leaders, master essential skills, and build your career with confidence."
 			/>
 			<div className="p-[6%]">
-				<Python />
+				<AllCoursesComp />
 			</div>
 			<PreFooter />
 		</section>

@@ -112,7 +112,9 @@ const MobileNav = () => {
 									</button>
 									<button
 										className="py-2 px-3 rounded-lg bg-lightblue  flex flex-row items-center text-white lg:text-[12px] text-[10px] gap-1 justify-between"
-										onClick={() => (window.location.href = "/waitlist")}>
+										onClick={() =>
+											(window.location.href = "https://portal.quanskill.com/")
+										}>
 										Login / Register
 										<IconCaretRightFilled
 											className="w-4 h-4 text-[#6B7280]"

@@ -119,7 +119,7 @@ function Header() {
 							/>
 						</button>
 					</Link>
-					<Link href="/waitlist">
+					<Link href="https://portal.quanskill.com/" target="_blank">
 						<button className="py-2 px-3 rounded-lg bg-lightblue  flex flex-row items-center text-white lg:text-[12px] text-[10px] gap-1">
 							Login / Register
 							<IconCaretRightFilled

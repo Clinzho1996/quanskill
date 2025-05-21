@@ -85,34 +85,29 @@ function ExpertBiography() {
 						/>
 					)}
 				</div>
-				<div className="flex flex-col sm:flex-row justify-start  items-center  gap-10">
-					<div className="flex flex-col gap-5 w-full">
+				<div className="flex flex-col sm:flex-row justify-start  items-center  gap-10 w-full">
+					<div className="flex flex-col gap-5 w-full sm:w-[30%]">
 						<p className="flex flex-col font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Name:
 							</span>{" "}
 							{data?.first_name} {data?.last_name}
 						</p>
-						<p className="flex flex-col gap-1 font-semibold text-primary">
-							<span className="font-normal text-[#5E5F6E] font-inter">
-								Email Address:
-							</span>{" "}
-							{data?.email}
-						</p>
+
 						<p className="flex flex-col gap-1 font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Phone Number:
 							</span>{" "}
 							{data?.phone}
 						</p>
-					</div>
-					<div className="flex flex-col gap-5 w-full">
 						<p className="flex flex-col gap-1 font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Gender:
 							</span>{" "}
 							{data?.gender}
 						</p>
+					</div>
+					<div className="flex flex-col gap-5w-full sm:w-[50%]">
 						<p className="flex flex-col gap-1 font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
 								Date Added:

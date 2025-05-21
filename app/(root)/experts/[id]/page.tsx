@@ -2,7 +2,6 @@
 
 import Breadcrumb from "@/components/BreadCrumb";
 import ExpertBiography from "@/components/ExpertBiography";
-import ExpertCourses from "@/components/ExpertCourses";
 import ExpertWork from "@/components/ExpertWork";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import axios from "axios";
@@ -86,17 +85,13 @@ function ExpertDetails() {
 						<Tabs defaultValue="bio" className="w-full">
 							<TabsList className="flex flex-row justify-center bg-[#EFF1F5] mx-auto w-fit gap-3 flex-wrap h-fit">
 								<TabsTrigger value="bio">Biography</TabsTrigger> |
-								<TabsTrigger value="work">Work and Project</TabsTrigger> |
-								<TabsTrigger value="courses">Assigned Courses</TabsTrigger>
+								<TabsTrigger value="work">Work and Project</TabsTrigger>
 							</TabsList>
 							<TabsContent value="bio" className="max-w-full">
 								<ExpertBiography />
 							</TabsContent>
 							<TabsContent value="work">
 								<ExpertWork />
-							</TabsContent>
-							<TabsContent value="courses">
-								<ExpertCourses />
 							</TabsContent>
 						</Tabs>
 					</div>

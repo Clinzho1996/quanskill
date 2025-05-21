@@ -116,10 +116,10 @@ function ContactUs() {
 								<Link href="#">
 									<Image src="/s2.png" alt="fb" width={30} height={30} />
 								</Link>
-								<Link href="#">
+								<Link href="https://www.linkedin.com/company/quanskill">
 									<Image src="/s3.png" alt="fb" width={30} height={30} />
 								</Link>
-								<Link href="#" className="cursor-pointer">
+								<Link href="https://www.facebook.com/QuanskillDAI" className="cursor-pointer">
 									<Image src="/s4.png" alt="fb" width={30} height={30} />
 								</Link>
 								<Link href="#">

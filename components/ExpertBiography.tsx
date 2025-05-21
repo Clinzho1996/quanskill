@@ -96,12 +96,6 @@ function ExpertBiography() {
 
 						<p className="flex flex-col gap-1 font-semibold text-primary">
 							<span className="font-normal text-[#5E5F6E] font-inter">
-								Phone Number:
-							</span>{" "}
-							{data?.phone}
-						</p>
-						<p className="flex flex-col gap-1 font-semibold text-primary">
-							<span className="font-normal text-[#5E5F6E] font-inter">
 								Gender:
 							</span>{" "}
 							{data?.gender}

@@ -3,9 +3,10 @@
 import { SkeletonCard } from "@/components/BlogSkeleton";
 import Breadcrumb from "@/components/BreadCrumb";
 import axios from "axios";
-import parse from "html-react-parser";
+import parse, { DOMNode, domToReact, Element } from "html-react-parser";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { Highlight, Prism } from "prism-react-renderer";
 import { useEffect, useState } from "react";
 
 interface Post {
@@ -16,16 +17,119 @@ interface Post {
 	created_at: string;
 }
 
+const defaultHighlightProps = {
+	Prism,
+	theme: undefined,
+	language: "javascript",
+	code: "",
+	children: () => null,
+};
+
 interface ApiResponse {
-	data: Post; // Adjust to match your API structure
+	data: Post;
+}
+
+// Custom parser to handle code blocks
+const parseWithCode = (html: string) => {
+	return parse(html, {
+		replace: (domNode: DOMNode) => {
+			if (isElement(domNode) && domNode.name === "pre") {
+				const codeNode = (domNode.children as unknown as DOMNode[]).find(
+					isElementWithName("code")
+				);
+
+				if (codeNode) {
+					const code =
+						codeNode.children[0]?.type === "text"
+							? codeNode.children[0].data
+							: "";
+					const className = codeNode.attribs?.class || "";
+					const languageMatch = className.match(/language-(\w+)/);
+					const language = languageMatch ? languageMatch[1] : "javascript";
+
+					return (
+						<div className="code-block my-4">
+							<Highlight
+								{...defaultHighlightProps}
+								code={code}
+								language={language}>
+								{(props: {
+									className: string;
+									style: React.CSSProperties;
+									tokens: any[][];
+									getLineProps: (input: any) => any;
+									getTokenProps: (input: any) => any;
+								}) => (
+									<pre
+										className={props.className}
+										style={{
+											...props.style,
+											padding: "20px",
+											borderRadius: "8px",
+										}}>
+										{props.tokens.map((line, i) => (
+											<div key={i} {...props.getLineProps({ line, key: i })}>
+												{line.map((token, key) => (
+													<span
+														key={key}
+														{...props.getTokenProps({ token, key })}
+													/>
+												))}
+											</div>
+										))}
+									</pre>
+								)}
+							</Highlight>
+						</div>
+					);
+				}
+			}
+
+			// Handle headings
+			if (isElement(domNode)) {
+				switch (domNode.name) {
+					case "h1":
+						return (
+							<h1 className="text-3xl font-bold my-4">
+								{domToReact(domNode.children as unknown as DOMNode[])}
+							</h1>
+						);
+					case "h2":
+						return (
+							<h2 className="text-2xl font-bold my-4">
+								{domToReact(domNode.children as unknown as DOMNode[])}
+							</h2>
+						);
+					case "h3":
+						return (
+							<h3 className="text-xl font-bold my-3">
+								{domToReact(domNode.children as unknown as DOMNode[])}
+							</h3>
+						);
+					default:
+						return undefined;
+				}
+			}
+			return undefined;
+		},
+	});
+};
+
+// Type guards for DOM nodes
+function isElement(node: DOMNode): node is Element {
+	return "type" in node && node.type === "tag";
+}
+
+function isElementWithName(name: string) {
+	return (node: DOMNode): node is Element =>
+		isElement(node) && node.name === name;
 }
 
 export default function BlogContent() {
 	const { id } = useParams();
-	const [post, setPost] = useState<Post | null>(null); // Use a single post
+	const [post, setPost] = useState<Post | null>(null);
 	const [isLoading, setIsLoading] = useState(true);
 
-	// Fetch post details by ID
 	const fetchPost = async () => {
 		try {
 			const response = await axios.get<ApiResponse>(
@@ -37,10 +141,8 @@ export default function BlogContent() {
 					},
 				}
 			);
-
-			console.log("data", response?.data?.data);
-			setPost(response?.data?.data); // Set post data
-			setIsLoading(false); // Set loading to false
+			setPost(response?.data?.data);
+			setIsLoading(false);
 		} catch (error: unknown) {
 			if (axios.isAxiosError(error)) {
 				console.log(
@@ -62,8 +164,8 @@ export default function BlogContent() {
 			year: "numeric",
 			month: "long",
 			day: "numeric",
-		}; // Correct types
-		const parsedDate = new Date(rawDate); // Ensure the date is parsed correctly
+		};
+		const parsedDate = new Date(rawDate);
 		return new Intl.DateTimeFormat("en-US", options).format(parsedDate);
 	};
 
@@ -86,7 +188,7 @@ export default function BlogContent() {
 							<div>
 								<p>Quanskill Management</p>
 								<p className="text-[#86898F]">
-									2 mins read • {formatDate(post.created_at)}
+									2 mins read • {formatDate(post.created_at)}
 								</p>
 							</div>
 						</div>
@@ -99,8 +201,8 @@ export default function BlogContent() {
 								className="w-full h-[310px] lg:h-[475px] rounded-sm object-cover"
 							/>
 						</div>
-						<div className="text-primary font-inter font-normal flex flex-col gap-3 mt-3">
-							{parse(post.post_body)}
+						<div className="blog-content text-primary font-inter font-normal flex flex-col gap-3 mt-3">
+							{parseWithCode(post.post_body)}
 						</div>
 					</div>
 				</div>

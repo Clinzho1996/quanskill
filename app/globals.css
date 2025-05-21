@@ -24,6 +24,71 @@ body {
 	display: block;
 }
 
+/* Blog content styles to match ReactQuill output */
+.blog-content {
+	line-height: 1.6;
+}
+
+.blog-content h1 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 1em 0 0.5em;
+}
+
+.blog-content h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 1em 0 0.5em;
+}
+
+.blog-content h3 {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0 0.5em;
+}
+
+.blog-content p {
+	margin: 0 0 1em;
+}
+
+.blog-content code {
+	font-family: monospace;
+	color: #fff !important;
+}
+
+.blog-content ul,
+.blog-content ol {
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
+.blog-content blockquote {
+	border-left: 4px solid #ccc;
+	margin: 1em 0;
+	padding-left: 1em;
+	color: #666 !important;
+	font-style: italic;
+}
+
+/* For code blocks */
+.code-block {
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.blog-content pre {
+	background: #1a1a1a;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	overflow-x: auto;
+	color: #eee;
+}
+
+.blog-content code {
+	font-family: monospace;
+}
+
 /* Animation that starts from the left */
 @keyframes scroll {
 	0% {

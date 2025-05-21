@@ -6,7 +6,7 @@ import axios from "axios";
 import parse, { DOMNode, domToReact, Element } from "html-react-parser";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { Highlight, Prism } from "prism-react-renderer";
+import { Highlight, Language, Prism, Token } from "prism-react-renderer";
 import { useEffect, useState } from "react";
 
 interface Post {
@@ -20,7 +20,7 @@ interface Post {
 const defaultHighlightProps = {
 	Prism,
 	theme: undefined,
-	language: "javascript",
+	language: "javascript" as Language,
 	code: "",
 	children: () => null,
 };
@@ -52,28 +52,37 @@ const parseWithCode = (html: string) => {
 							<Highlight
 								{...defaultHighlightProps}
 								code={code}
-								language={language}>
-								{(props: {
+								language={language as Language}>
+								{({
+									className,
+									style,
+									tokens,
+									getLineProps,
+									getTokenProps,
+								}: {
 									className: string;
 									style: React.CSSProperties;
-									tokens: any[][];
-									getLineProps: (input: any) => any;
-									getTokenProps: (input: any) => any;
+									tokens: Token[][];
+									getLineProps: (input: {
+										line: Token[];
+										key: number;
+									}) => React.HTMLProps<HTMLDivElement>;
+									getTokenProps: (input: {
+										token: Token;
+										key: number;
+									}) => React.HTMLProps<HTMLSpanElement>;
 								}) => (
 									<pre
-										className={props.className}
+										className={className}
 										style={{
-											...props.style,
+											...style,
 											padding: "20px",
 											borderRadius: "8px",
 										}}>
-										{props.tokens.map((line, i) => (
-											<div key={i} {...props.getLineProps({ line, key: i })}>
+										{tokens.map((line, i) => (
+											<div key={i} {...getLineProps({ line, key: i })}>
 												{line.map((token, key) => (
-													<span
-														key={key}
-														{...props.getTokenProps({ token, key })}
-													/>
+													<span key={key} {...getTokenProps({ token, key })} />
 												))}
 											</div>
 										))}
@@ -126,7 +135,7 @@ function isElementWithName(name: string) {
 }
 
 export default function BlogContent() {
-	const { id } = useParams();
+	const { id } = useParams<{ id: string }>();
 	const [post, setPost] = useState<Post | null>(null);
 	const [isLoading, setIsLoading] = useState(true);
 

@@ -29,6 +29,7 @@ body {
 	line-height: 1.6;
 }
 
+/* Headings */
 .blog-content h1 {
 	font-size: 2em;
 	font-weight: bold;
@@ -47,22 +48,35 @@ body {
 	margin: 1em 0 0.5em;
 }
 
+/* Paragraphs */
 .blog-content p {
 	margin: 0 0 1em;
 }
 
+/* Lists - Preserve original styles */
+.blog-content ul {
+	list-style-type: disc; /* Dots for unordered lists */
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
+.blog-content ol {
+	list-style-type: decimal; /* Numbers for ordered lists */
+	margin: 1em 0;
+	padding-left: 2em;
+}
+
+.blog-content li {
+	margin-bottom: 0.5em;
+}
+
+/* Code */
 .blog-content code {
 	font-family: monospace;
 	color: #fff !important;
 }
 
-.blog-content ul,
-.blog-content ol {
-	margin: 1em 0;
-	padding-left: 2em;
-	list-style-type: decimal;
-}
-
+/* Blockquotes */
 .blog-content blockquote {
 	border-left: 4px solid #ccc;
 	margin: 1em 0;
@@ -71,7 +85,7 @@ body {
 	font-style: italic;
 }
 
-/* For code blocks */
+/* Code blocks */
 .code-block {
 	margin: 1rem 0;
 	border-radius: 0.5rem;
@@ -86,7 +100,7 @@ body {
 	color: #eee;
 }
 
-.blog-content code {
+.blog-content pre code {
 	font-family: monospace;
 }
 

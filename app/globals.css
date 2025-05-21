@@ -60,6 +60,7 @@ body {
 .blog-content ol {
 	margin: 1em 0;
 	padding-left: 2em;
+	list-style-type: decimal;
 }
 
 .blog-content blockquote {

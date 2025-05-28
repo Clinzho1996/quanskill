@@ -392,7 +392,7 @@ function CourseDetails() {
 						<div className="max-w-full mt-4">
 							<h2 className="flex flex-row justify-start items-center gap-2 font-medium text-sm font-inter">
 								<Image src="/mark.png" width={14} height={14} alt="check" />
-								<p className="font-medium">Expected Hours of Live Streaming:</p>
+								<p className="font-medium">Expected Hours of Self Learning:</p>
 								<p className="font-normal">
 									{course.courseFormatAndAssessment?.selfLearningHours} Hours
 								</p>

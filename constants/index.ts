@@ -2992,7 +2992,7 @@ export const courses = [
 		users: "AI/ML Engineers, Data Scientists, Developers, Students",
 		category: "GenAI",
 		level: "Advanced",
-		price: "$300.00",
+		price: "$820.00",
 		noTopics: "24",
 		type: "Hybrid Live Sessions | Hands-on Projects | Personalized Mentoring",
 		enrolled: 350,

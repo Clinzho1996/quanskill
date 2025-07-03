@@ -39,7 +39,7 @@ function Learning() {
 					img="/library-icon.png"
 					title="One-on-One Mentorship"
 					description="Get personalized guidance from industry experts."
-					bg="/library.png"
+					bg="/one.png"
 					handleClick={() => handleOpenWhatsApp()}
 				/>
 			</div>

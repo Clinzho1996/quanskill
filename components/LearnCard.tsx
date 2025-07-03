@@ -16,8 +16,10 @@ function LearnCard({
 	handleClick: () => void;
 }) {
 	return (
-		<div className="h-[330px] w-[330px] shadow-lg rounded-lg p-1 ">
-			<div className="px-4 pt-4 pb-0 bg-ash w-fit  h-full rounded-lg relative">
+		<div
+			className="h-[330px] w-[330px] shadow-lg rounded-lg p-1 cursor-pointer hover:shadow-2xl transition-all duration-300 ease-in-out"
+			onClick={handleClick}>
+			<div className="px-4 pt-4 pb-0 bg-ash w-full  h-full rounded-lg relative">
 				<div className="flex flex-row justify-between items-center">
 					<div className="flex flex-row justify-start items-center gap-3">
 						<Image

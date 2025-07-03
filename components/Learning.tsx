@@ -19,21 +19,21 @@ function Learning() {
 					title="Live Classes"
 					description="Engage with experts in real-time for active learning."
 					bg="/live.png"
-					handleClick={() => {}}
+					handleClick={() => handleOpenWhatsApp()}
 				/>
 				<LearnCard
 					img="/quanlab-icon.png"
 					title="QuanLabs"
 					description="Apply your knowledge in guided lab session"
 					bg="/quanlabs.png"
-					handleClick={() => {}}
+					handleClick={() => handleOpenWhatsApp()}
 				/>
 				<LearnCard
 					img="/library-icon.png"
 					title="24/7 Self-Help Library"
 					description="Resources available anytime, anywhere."
 					bg="/library.png"
-					handleClick={() => {}}
+					handleClick={() => handleOpenWhatsApp()}
 				/>
 				<LearnCard
 					img="/library-icon.png"

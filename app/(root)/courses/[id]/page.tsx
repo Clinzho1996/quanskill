@@ -88,7 +88,7 @@ function CourseDetails() {
 							{/* By earning this certificate, you demonstrate your ability to apply
 							practical insights and techniques, paving the way for career
 							advancement and professional success in {course.title} */}
-							By attending this masterclass, you'll go from zero to hero,
+							By attending this masterclass, you&apos;ll go from zero to hero,
 							building complete agent-driven marketing systems that produce
 							professional results.
 						</p>

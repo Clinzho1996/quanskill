@@ -3424,14 +3424,6 @@ export const courses = [
 				"Peer discussion forums",
 			],
 		},
-		resourcesOnDemand: {
-			title: "Additional Support",
-			content: [
-				"Q&A sessions with instructors",
-				"Peer feedback opportunities",
-				"Post-session office hours",
-			],
-		},
 		expectedLearningOutcomes: {
 			title: "Learning Outcomes",
 			content: [

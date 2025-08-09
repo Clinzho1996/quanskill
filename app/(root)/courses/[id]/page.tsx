@@ -113,7 +113,7 @@ function CourseDetails() {
 						<hr className="border-[1px] border-[#F1F1F1] mt-3 mb-3" />
 						<Link href="/waitlist">
 							<button className="py-2 px-3 rounded-lg bg-lightblue  flex flex-row justify-center items-center text-white lg:text-[12px] text-[10px] gap-1 w-full">
-								Activate your profile
+								Enroll Now
 								<IconCaretRightFilled
 									className="w-4 h-4 text-[#6B7280]"
 									color="#A9B6DD"

@@ -445,7 +445,7 @@ function CourseDetails() {
 						</div>
 					</div>
 
-					<div className="mt-10">
+					{/* <div className="mt-10">
 						<h2 className="text-[20px] text-primary font-semibold">
 							{course.resourcesOnDemand?.title}
 						</h2>
@@ -457,7 +457,7 @@ function CourseDetails() {
 								</p>
 							</h2>
 						</div>
-					</div>
+					</div> */}
 
 					<div className="mt-10">
 						<h2 className="text-[20px] text-primary font-semibold">

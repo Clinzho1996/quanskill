@@ -41,6 +41,9 @@ function CourseDetails() {
 						<h2 className="text-white text-[20px] lg:text-[36px] font-semibold">
 							{course.title}
 						</h2>
+						<h3 className="text-white text-[17px] lg:text-[26px] font-semibold">
+							Price: <span className="text-secondary">{course.price}</span>
+						</h3>
 						<p className="text-white text-[14px] lg:text-[16px] mt-3 font-light">
 							{course.description}
 						</p>

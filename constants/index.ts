@@ -3236,7 +3236,7 @@ export const courses = [
 		users: "Marketing Professionals",
 		category: "GenAI",
 		level: "Intermediate",
-		price: "$450.00",
+		price: "$120.00",
 		noTopics: "15",
 		type: "Live Interactive Workshops | Hands-on Building",
 		enrolled: 200,

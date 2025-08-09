@@ -7,12 +7,7 @@ import { courses } from "@/constants";
 import {
 	IconCaretRightFilled,
 	IconCircleFilled,
-	IconExclamationCircleFilled,
 	IconHome,
-	IconInfoCircle,
-	IconStarFilled,
-	IconThumbUpFilled,
-	IconWorld,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,7 +64,7 @@ function CourseDetails() {
 							/>
 						</Link>
 
-						<div className="flex flex-row flex-wrap justify-start items-center gap-5 mt-5">
+						{/* <div className="flex flex-row flex-wrap justify-start items-center gap-5 mt-5">
 							<p className="text-white text-[12px] lg:text-[14px] font-light">
 								{course.enrolled} already enrolled
 							</p>
@@ -80,7 +75,7 @@ function CourseDetails() {
 							<p className="text-white text-[12px] lg:text-[14px] font-light flex flex-row justify-start items-center gap-1">
 								<IconWorld size={18} /> English
 							</p>
-						</div>
+						</div> */}
 					</div>
 					<div className="bg-white py-3 px-6 rounded-lg w-full lg:w-[35%]">
 						<h2 className="text-[16px] lg:text-[18px] font-bold text-primary">
@@ -92,23 +87,23 @@ function CourseDetails() {
 							advancement and professional success in {course.title}
 						</p>
 						<hr className="border-[1px] border-[#F1F1F1] mt-3 mb-3" />
-						<h2 className="text-[14px] lg:text-[16px] font-bold text-primary">
+						{/* <h2 className="text-[14px] lg:text-[16px] font-bold text-primary">
 							Lab Sessions
 						</h2>
 						<p className="text-xs lg:text-sm text-[#6B7280] mt-3 flex flex-row justify-start items-center gap-1">
 							Recommended experience{" "}
 							<IconInfoCircle className="text-secondary" size={18} />
-						</p>
+						</p> */}
 						<p className="text-xs lg:text-sm text-[#6B7280] mt-6">
 							Price:{" "}
 							<span className="text-primary font-bold">{course.price}</span>
 						</p>
-						<p className="flex flex-row justify-start items-center gap-1 text-xs lg:text-sm mt-3 text-[#6B7280]">
+						{/* <p className="flex flex-row justify-start items-center gap-1 text-xs lg:text-sm mt-3 text-[#6B7280]">
 							<span className="text-primary font-bold">4.8</span>{" "}
 							<IconStarFilled size={18} className="text-secondary" /> (796
 							reviews) |{" "}
 							<IconThumbUpFilled size={18} className="text-secondary" /> 99%
-						</p>
+						</p> */}
 						<hr className="border-[1px] border-[#F1F1F1] mt-3 mb-3" />
 						<Link href="/waitlist">
 							<button className="py-2 px-3 rounded-lg bg-lightblue  flex flex-row justify-center items-center text-white lg:text-[12px] text-[10px] gap-1 w-full">
@@ -497,7 +492,7 @@ function CourseDetails() {
 				</div>
 			</div>
 
-			<div className="bg-gradient-to-b from-[#FFF0F0] to-[#FAFAFA] p-[4%] shadow-md shadow-gray-200  rounded-xl  mx-4 mb-3 mt-6">
+			{/* <div className="bg-gradient-to-b from-[#FFF0F0] to-[#FAFAFA] p-[4%] shadow-md shadow-gray-200  rounded-xl  mx-4 mb-3 mt-6">
 				<div className="bg-white p-5 border-[1px] border-[#FFF0F0] rounded-lg flex flex-col lg:flex-row w-full items-center">
 					<div className="w-full lg:w-[65%]">
 						<h2 className="text-[16px] lg:text-[18px] font-bold text-primary">
@@ -520,7 +515,7 @@ function CourseDetails() {
 						/>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			<Faq />
 			<Testimonials />
 			<PreFooter />

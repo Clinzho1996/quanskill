@@ -99,6 +99,7 @@ export interface CourseInclude {
 
 export interface Course {
 	id: number;
+	brief?: string;
 	img: string;
 	title: string;
 	description: string;
@@ -3448,6 +3449,8 @@ export const courses = [
 	{
 		id: 12,
 		img: "/machine2.png",
+		brief:
+			"By attending this masterclass, you'll go from zero to hero, building complete AI-Powered Medical Diagnostic and Referral systems that produce professional results",
 		title: "AI-Powered Medical Diagnostic and Referral Agent (A.I.M.D.A.R.)",
 		description:
 			"The A.I.M.D.A.R. is an intelligent GenAI-powered agent designed to assist patients in understanding their health symptoms and navigating the healthcare system. Using a Retrieval-Augmented Generation (RAG) model and n8n automation workflows, the system delivers grounded, accurate preliminary diagnoses and personalized healthcare referrals.",
@@ -3623,7 +3626,7 @@ export const courses = [
 		},
 		courseFormatAndAssessment: {
 			title: "Project Structure",
-			liveStreamingHours: 8,
+			liveStreamingHours: 5,
 			selfLearningHours: 7,
 			assessmentsAndProjects: {
 				practiceQuestions: 40,

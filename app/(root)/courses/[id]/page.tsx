@@ -84,14 +84,23 @@ function CourseDetails() {
 						<h2 className="text-[16px] lg:text-[18px] font-bold text-primary">
 							Impactful
 						</h2>
-						<p className="text-xs lg:text-sm text-[#6B7280] mt-3">
-							{/* By earning this certificate, you demonstrate your ability to apply
+						{course.brief ? (
+							<p className="text-xs lg:text-sm text-[#6B7280] mt-3">
+								{/* By earning this certificate, you demonstrate your ability to apply
 							practical insights and techniques, paving the way for career
 							advancement and professional success in {course.title} */}
-							By attending this masterclass, you&apos;ll go from zero to hero,
-							building complete agent-driven marketing systems that produce
-							professional results.
-						</p>
+								{course.brief}
+							</p>
+						) : (
+							<p className="text-xs lg:text-sm text-[#6B7280] mt-3">
+								{/* By earning this certificate, you demonstrate your ability to apply
+							practical insights and techniques, paving the way for career
+							advancement and professional success in {course.title} */}
+								By attending this masterclass, you&apos;ll go from zero to hero,
+								building complete agent-driven marketing systems that produce
+								professional results.
+							</p>
+						)}
 						<hr className="border-[1px] border-[#F1F1F1] mt-3 mb-3" />
 						{/* <h2 className="text-[14px] lg:text-[16px] font-bold text-primary">
 							Lab Sessions

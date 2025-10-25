@@ -18,8 +18,8 @@ export const NavLinks = [
 		route: "/",
 	},
 	{
-		name: "Community",
-		route: "/",
+		name: "B2B",
+		route: "/b2b",
 	},
 	{
 		name: "Experts",

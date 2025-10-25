@@ -13,6 +13,17 @@ body {
 	background-size: cover;
 }
 
+.heroWorkforce {
+	background-image: url("/bg6.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.z-10 {
+	z-index: 10 !important;
+}
+
 .breadcrumb {
 	background-image: url("/bread.png");
 	background-position: bottom;

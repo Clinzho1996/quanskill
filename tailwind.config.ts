@@ -16,6 +16,10 @@ export default {
 		},
 		extend: {
 			colors: {
+				"quansk-orange": "#F96D19", // The bright orange in the UI
+				"quansk-dark": "#333333", // A dark color for primary text
+				"quansk-light-gray": "#F5F5F5", // For subtle backgrounds if needed
+				"quansk-blue": "#1a73e8", // A common blue for links/actions
 				fill: {
 					"1": "rgba(255, 255, 255, 0.10)",
 				},

@@ -168,7 +168,7 @@ function WorkForce() {
 						3. Custom Digital Integration & Co-Development
 					</h3>
 					<p className="text-xl italic font-normal text-white mb-6">
-						Need to pilot a solution fast? Let's{" "}
+						Need to pilot a solution fast? Let&apos;s{" "}
 						<span className="underline decoration-quansk-orange decoration-2">
 							build it together.
 						</span>

@@ -10,8 +10,8 @@ function WhoWeAreSolutions() {
 				<p className="text-lg text-quansk-dark mb-6">
 					<strong className="font-extrabold">Quanskill</strong> is a hybrid
 					education and AI solutions company committed to enabling Southeast
-					Asia's transformation through AI, Machine Learning (ML), and advanced
-					digital technologies.
+					Asia&apos;s transformation through AI, Machine Learning (ML), and
+					advanced digital technologies.
 				</p>
 
 				<p className="text-lg text-quansk-dark mb-8">

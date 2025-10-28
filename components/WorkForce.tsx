@@ -177,7 +177,7 @@ function WorkForce() {
 			</div>
 
 			{/* Custom Digital Integration Section */}
-			<div className="w-full border-[1px] border-black mt-12 sm:mt-20 relative">
+			<div className="w-full border-[1px] border-gray-300 mt-12 sm:mt-20 relative">
 				<div className="bg-gradient-to-b from-[#f75c24] to-[#f78b26] h-fit px-4 sm:px-[6%] py-6 sm:py-[6%] w-full lg:w-[65%] ml-0 lg:ml-[6%] mb-[-150px] sm:mb-[-300px] z-10 relative">
 					<h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
 						3. Custom Digital Integration & Co-Development
@@ -309,6 +309,40 @@ function WorkForce() {
 								(e.g., VSIP, VGU)
 							</li>
 						</ul>
+					</div>
+				</div>
+
+				<div>
+					<div className="p-[6%] flex justify-end w-full">
+						<Image
+							src="/map.png"
+							alt="logo"
+							width={1200}
+							height={700}
+							className="w-full sm:w-[70%] z-0 object-contain"
+						/>
+					</div>
+
+					<div className="px-[6%] pb-[6%] mt-[-120px] sm:mt-[-150px]">
+						<h2 className="text-4xl font-bold mb-2 text-quansk-orange">
+							<span className="text-quansk-orange">Regional Reach</span> –
+						</h2>
+						<h2 className="text-4xl font-bold text-quansk-orange mb-8">
+							Global Vision
+						</h2>
+
+						<div className="text-lg text-quansk-dark font-medium">
+							<p className="mb-2">
+								<strong className="font-extrabold">Operating across</strong>{" "}
+								Vietnam, Indonesia, Malaysia, and India
+							</p>
+							<p>
+								<strong className="font-extrabold">
+									Multi-language support:
+								</strong>{" "}
+								Vietnamese | English | Korean (coming soon)
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

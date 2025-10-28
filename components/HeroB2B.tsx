@@ -7,10 +7,10 @@ function HeroB2B() {
 		<section className="hero flex flex-col lg:flex-row items-center justify-between w-full px-[6%] py-[16%] lg:py-[4%] mt-0 ease-fade">
 			<div className="w-full lg:w-[50%] pr-0 lg:pr-[100px]">
 				<h2 className="text-white text-[28px] lg:text-[36px] font-bold font-inter">
-					Your Partner in the Age of
+					Your Partner in the Age
 				</h2>
 				<h2 className="text-secondary text-[28px] lg:text-[36px] font-bold font-inter">
-					Smart Automation
+					<span className="text-white">of </span> Smart Automation
 				</h2>
 				<Image src="/bg-arrow.png" alt="logo" width={300} height={30} />
 				<p className="text-white font-normal mt-3">

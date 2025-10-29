@@ -112,9 +112,9 @@ function WorkForce() {
 				<Image
 					src="/men3.png"
 					alt="hero"
-					width={600}
+					width={800}
 					height={500}
-					className="mt-4 sm:mt-0 w-full max-w-md mx-auto lg:max-w-none lg:w-auto lg:translate-y-[100px]"
+					className="mt-4 sm:mt-0 w-full sm:w-[53%] lg:translate-y-[100px]"
 				/>
 			</div>
 
